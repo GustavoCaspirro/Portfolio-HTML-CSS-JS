@@ -1,0 +1,52 @@
+/* Tabs */
+.career .btn {
+    background: var(--white-color);
+    border: none;
+    border-radius: .2rem .2rem 0 0;
+    cursor: pointer;
+    margin: 0;
+    padding: .65rem;
+}
+
+.career .btn:hover {
+    background: var(--brand-color);
+    color: var(--white-color);
+    transition: all .3s;
+}
+
+.carrer .btn:focus { outline: none; }
+
+.career .btn.active {
+    background: var(--brand-color);
+    color: var(--white-color);
+    cursor: default;
+}
+
+/* Content */
+.career .content { display: none; }
+
+.career .content.active {
+    border: .1rem solid var(--border-color);
+    border-top: .25rem solid var(--brand-color);
+    display: block;
+    padding: 1.4rem;
+}
+
+.career .content .box { margin-bottom: 20px; }
+
+.career .content--education .text {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.career .content .box .title {
+    border-left: .25rem solid var(--brand-color);
+    font-weight: bold;
+    margin-bottom: .8rem;
+    padding-left: .5rem;
+}
+
+.career .content .box .period {
+    font-weight: bold;
+    margin-left: .2rem;
+}

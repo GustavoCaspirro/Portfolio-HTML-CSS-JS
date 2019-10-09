@@ -1,0 +1,78 @@
+.skills { background: #d6efff; }
+
+.skills__content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .skills__content { flex-direction: row; }
+}
+
+.skills__content .information-text { width: 100%; }
+
+@media screen and (min-width: 768px) {
+    .skills__content .information-text { width: 50% }
+}
+
+.skills__content .information-text__about {
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.skills__content .bar-itens {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .skills__content .bar-itens { width: 50% }
+}
+
+.skills__content .bar-itens__item { width: 100%; }
+
+@media screen and (min-width: 768px) {
+    .skills__content .bar-itens__item { width: 80% }
+}
+
+.skills__content .bar-itens__item .language {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.skills .bar-itens .bar {
+    background: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: .2rem;
+    height: .5rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+    transition: all .3s;
+}
+
+.skills .bar__porcentage {
+    background: var(--brand-color);
+    height: 100%;
+}
+
+.skills .bar__porcentage.porcent10 { width: 10%; }
+
+.skills .bar__porcentage.porcent20 { width: 20%; }
+
+.skills .bar__porcentage.porcent30 { width: 30%; }
+
+.skills .bar__porcentage.porcent40 { width: 40%; }
+
+.skills .bar__porcentage.porcent50 { width: 50%; }
+
+.skills .bar__porcentage.porcent60 { width: 60%; }
+
+.skills .bar__porcentage.porcent70 { width: 70%; }
+
+.skills .bar__porcentage.porcent80 { width: 80%; }
+
+.skills .bar__porcentage.porcent90 { width: 90%; }
+
+.skills .bar__porcentage.porcent100 { width: 100%; }
