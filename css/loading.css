@@ -1,0 +1,16 @@
+.contact .loading {
+    display: none;
+}
+
+.contact .loading.show {
+    align-items: center;
+    background: rgba(0,0,0,.8);
+    color: var(--white-color);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

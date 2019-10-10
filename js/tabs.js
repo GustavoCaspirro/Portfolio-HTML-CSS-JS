@@ -6,7 +6,7 @@ function toggleTab(element) {
     const elementWithActive = element.className.indexOf('active');
 
     if (elementWithActive === -1) {
-        var listTabs = Array.from(element.parentElement.querySelectorAll('.btn'));
+        var listTabs = Array.from(element.parentElement.querySelectorAll('.tab'));
 
         listTabs.filter((tab) => {
             if(tab.className.indexOf('active') !== -1) { tab.classList.remove('active'); };
@@ -16,7 +16,7 @@ function toggleTab(element) {
         const classesTab = Array.from(element.classList.value.split(' '));
 
         const classTabSelected = classesTab.filter((classCurrent) => {
-            if(classCurrent.indexOf("btn--") !== -1) {
+            if(classCurrent.indexOf("tab--") !== -1) {
                 return classCurrent;
             }
         });

@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Caspirro-">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="./img/favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <title>Gustavo Caspirro - Front End Developer</title>
 </head>
-<body>
+<body onload="load();">
     <header class="header">
         <div class="wrapper">
             <div class="header__main">
                 <img class="header__main__logo" src="./img/logo.png" alt="Logo Gustavo Caspirro" title="Logo Gustavo Caspirro">
                 <nav class="header__main__menu">
-                    <a class="header__main__menu__item" href="#career">Career</a>
-                    <a class="header__main__menu__item" href="#skills">Skills</a>
+                    <a class="header__main__menu__item" href="#career">Carreira</a>
+                    <a class="header__main__menu__item" href="#skills">Habilidades</a>
                     <a class="header__main__menu__item" href="#contact">Contato</a>
                 </nav>
             </div>
@@ -69,7 +70,7 @@
                         auto exigência, dedicação ao trabalho/estudos e bom relacionamento em geral.
                     </p>
 
-                    <a id="download_cv" class="btn-cv" href="./pdf/Curriculo-Gustavo-de-Paula-Caspirro.pdf" target="_blank" >Download CV</a>
+                    <a class="btn btn-cv" href="./pdf/Curriculo-Gustavo-de-Paula-Caspirro.pdf" target="_blank" >Download CV</a>
                 </div>  
             </div>
 
@@ -78,13 +79,13 @@
 
     <section class="career" id="career">
         <div class="wrapper">
-            <h1 class="title-section">Career</h1>
+            <h1 class="title-section">Carreira</h1>
             
-            <button onclick="toggleTab(this)" class="btn btn--education active">Resumo</button>
-            <button onclick="toggleTab(this)" class="btn btn--student">Escolaridade </button>
-            <button onclick="toggleTab(this)" class="btn btn--teacher">Histórico Profissional</button>
+            <button onclick="toggleTab(this)" class="tab tab--resume active">Resumo</button>
+            <button onclick="toggleTab(this)" class="tab tab--school">Escolaridade </button>
+            <button onclick="toggleTab(this)" class="tab tab--history">Experiência</button>
     
-            <div class="content content--education active">
+            <div class="content content--resume active">
                 <p class="text">
                     Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
                     estagiário de Design e UI participando ativamente no levantamento das necessidades do usuário, 
@@ -101,7 +102,7 @@
                 </p>
             </div>
             
-            <div class="content content--student">
+            <div class="content content--school">
                 <div class="box">
                     <h2 class="title">FIAP</h2>
                     <span class="school">MBA - Mobile Development</span>
@@ -121,7 +122,7 @@
                 </div>
             </div>
             
-            <div class="content content--teacher">
+            <div class="content content--history">
                 <div class="box">
                     <h2 class="title">Viajanet</h2>
                     <span class="school">Front End Developer</span>
@@ -148,7 +149,7 @@
 
             <div class="skills__content">
                 <div class="information-text">
-                    <h1 class="title-section">Skills</h1>
+                    <h1 class="title-section">Habilidades</h1>
 
                     <p class="information-text__about">
                         Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
@@ -256,6 +257,8 @@
                     <span class="copyright__text">&copy; Todos direitos reservados.</span>
                 </div>
 
+                <button class="btn btn-back-to-top">Voltar ao topo</button>
+
                 <div class="social-medias">
                     <a href="https://www.facebook.com/caspirrodesigner/" target="_blank" class="social-medias__link">
                         <img class="social-medias__media" src="./img/facebook.svg" alt="Icone Facebook" title="Facebook">
@@ -273,5 +276,7 @@
 
     <script src="./js/tabs.js"></script>
     <script src="./js/sendEmail.js"></script>
+    <script src="./js/BackToTop.js"></script>
+    <script src="./js/load.js"></script>
 </body>
 </html>

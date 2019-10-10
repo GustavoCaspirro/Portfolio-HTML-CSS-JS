@@ -1,7 +1,6 @@
 .about-me {
     background: var(--about-bg-color);
-    padding-bottom: 4rem;
-    padding-top: 6rem;
+    padding-bottom: 5rem;
 }
 
 .about-me__content {
@@ -83,9 +82,6 @@
 }
 
 .about-me .btn-cv {
-    background: var(--brand-color);
-    border-radius: .2rem;
-    color: var(--white-color);
     display: block;
     margin: 2.5rem auto 0;
     padding: 1rem 1.5rem;

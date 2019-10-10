@@ -2,13 +2,15 @@
     background: #fff;
     box-sizing: border-box;
     box-shadow: 0 0 .6rem rgba(0,0,0,.1);
-    padding: 1.5rem .5rem;
-    position: fixed;
+    left: 0;
+    padding: 1rem .5rem;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .header { padding: 1.5rem 0; }
+    .header { padding: 1rem 0; }
 }
 
 .header__main {
@@ -21,14 +23,18 @@
 .header__main__logo { width: 2.5rem; }
 
 @media screen and (min-width: 768px) {
-    .header__main__logo { width: 4.5rem; }
+    .header__main__logo { width: 2.5rem; }
 }
 
 .header__main__menu__item {
     border-bottom: 2px solid var(--white-color);
     color: var(--font-color);
-    padding: .8rem;
+    padding: .3rem;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__main__menu__item { padding: .8rem; }
 }
 
 .header__main__menu__item:hover,

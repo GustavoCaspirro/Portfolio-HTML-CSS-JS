@@ -12,7 +12,7 @@ function sendEmail() {
     const message = document.querySelector('.mensagem').value;
 
     const msg = {
-        from: "gustavo@assessoria.app",
+        from: "gustavocaspirro@assessoria.app",
         to: "caspirrogustavo@gmail.com",
         subject: assunto,
         text: `

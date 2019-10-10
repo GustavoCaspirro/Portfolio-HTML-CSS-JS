@@ -39,21 +39,3 @@
 @media screen and (min-width: 768px) {
     .contact__form__left, .contact__form__right { width: 48%; }
 }
-
-/* Loading */
-.contact .loading {
-    display: none;
-}
-
-.contact .loading.show {
-    background: rgba(0,0,0,.8);
-    color: var(--white-color);
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}

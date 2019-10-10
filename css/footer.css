@@ -29,3 +29,9 @@
 .footer__content .social-medias__link:focus { outline: none; }
 
 .footer__content .social-medias__media { width: 28px; }
+
+.footer .btn-back-to-top {
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}

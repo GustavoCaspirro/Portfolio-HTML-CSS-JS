@@ -1,22 +1,22 @@
 /* Tabs */
-.career .btn {
+.career .tab {
     background: var(--white-color);
     border: none;
     border-radius: .2rem .2rem 0 0;
     cursor: pointer;
     margin: 0;
-    padding: .65rem;
+    padding: .55rem;
 }
 
-.career .btn:hover {
+.career .tab:hover {
     background: var(--brand-color);
     color: var(--white-color);
     transition: all .3s;
 }
 
-.carrer .btn:focus { outline: none; }
+.carrer .tab:focus { outline: none; }
 
-.career .btn.active {
+.career .tab.active {
     background: var(--brand-color);
     color: var(--white-color);
     cursor: default;
@@ -29,12 +29,16 @@
     border: .1rem solid var(--border-color);
     border-top: .25rem solid var(--brand-color);
     display: block;
-    padding: 1.4rem;
+    padding: .6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .career .content.active { padding: 1.4rem; }
 }
 
 .career .content .box { margin-bottom: 20px; }
 
-.career .content--education .text {
+.career .content--resume .text {
     margin-top: 1rem;
     text-align: justify;
 }
