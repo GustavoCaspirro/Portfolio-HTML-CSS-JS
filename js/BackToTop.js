@@ -5,18 +5,9 @@ class BackToTop {
     }
 
     handleClick(instance, event) {
-       console.log('Clicado!!', instance, event);
-
-        event.view.scrollTo({ // Não suportado por alguns navegadores;
+        event.view.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
-
-        // instance.interval = setInterval(() => {
-        //     if(window.scrollY <= 0)
-        //         return clearInterval(instance.interval);
-
-        //     window.scrollTo(0, window.scrollY - 10)
-        // }, 10)
     }
 }

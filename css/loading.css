@@ -1,8 +1,6 @@
-.contact .loading {
-    display: none;
-}
+.loading { display: none; }
 
-.contact .loading.show {
+.loading.show {
     align-items: center;
     background: rgba(0,0,0,.8);
     color: var(--white-color);

@@ -22,26 +22,29 @@
     width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     .about-me__box { width: 50%; }
-}
+} 
 
-.about-me__box__photo {
+.about-me__content__photo {
     border-radius: 50%;
     text-align: center;
     width: 17rem;
 }
 
-.about-me__box .social-icons { margin-top: 1rem; }
+.about-me__social-icons { margin-top: 1rem; }
 
-.about-me__box .social-icons__box { display: inline-block; }
+.about-me .link { text-decoration: none; }
 
-.about-me__box .social-icons__box .link:focus { outline: none; }
+.about-me .link:focus { outline: none; }
 
-
-.about-me__box .social-icons__icon {
+.about-me__social-icons__icon {
     margin-right: .8rem;
     width: 2rem;
+}
+
+.about-me__social-icons__icon.github {
+    margin-right: 0;
 }
 
 .about-me__description {

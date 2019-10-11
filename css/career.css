@@ -36,12 +36,17 @@
     .career .content.active { padding: 1.4rem; }
 }
 
-.career .content .box { margin-bottom: 20px; }
+.career .content .box { margin-bottom: 1.4rem; }
 
 .career .content--resume .text {
     margin-top: 1rem;
     text-align: justify;
 }
+
+.career .content--resume .text:first-of-type { margin-top: 0; }
+
+.career .content--school .box:last-of-type,
+.career .content--history .box:last-of-type { margin-bottom: 0; }
 
 .career .content .box .title {
     border-left: .25rem solid var(--brand-color);

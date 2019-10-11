@@ -34,11 +34,10 @@ function sendEmail() {
         }
     )
     .then(data => {
-           console.log(data);
+           loading.className = loading.className.replace('show', '');
            alert("E-mail enviado com sucesso");
-           loading.className = loading.className.replace('show', '')
     }).catch(err => {
-        console.error(err);
-        loading.className = loading.className.replace('show', '')
+        loading.className = loading.className.replace('show', '');
+        console.error(`Mensagem de erro ${err}`);
     });
 }

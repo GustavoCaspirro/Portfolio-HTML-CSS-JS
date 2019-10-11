@@ -27,24 +27,18 @@
         <div class="wrapper">
             <div class="about-me__content">
                 <div class="about-me__box">
-                    <img class="about-me__box__photo" src="./img/gustavo-caspirro.jpg" alt="Minha Foto" title="Gustavo Caspirro">
-                    <ul class="social-icons">
-                        <li class="social-icons__box">
-                            <a class="link facebook-link" href="https://www.facebook.com/caspirrodesigner/" target="_blank">
-                                <img class="social-icons__icon" src="./img/facebook.svg" alt="Icone Facebook" title="Facebook">
-                            </a>
-                        </li>
-                        <li class="social-icons__box">
-                            <a class="link linkedin-link" href="https://www.linkedin.com/in/gustavocaspirro/" target="_blank">
-                                <img class="social-icons__icon" src="./img/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
-                            </a>
-                        </li>
-                        <li class="social-icons__box">
-                            <a class="link linkedin-link" href="https://github.com/gustavocaspirro" target="_blank">
-                                <img class="social-icons__icon" src="./img/github.svg" alt="Icone GitHub" title="GitHub">
-                            </a>
-                        </li>
-                    </ul>
+                    <img class="about-me__content__photo" src="./img/gustavo-caspirro.jpg" alt="Minha Foto" title="Gustavo Caspirro">
+                    <div class="about-me__social-icons">
+                        <a class="link" href="https://www.facebook.com/caspirrodesigner/" target="_blank">
+                            <img class="about-me__social-icons__icon" src="./img/facebook.svg" alt="Icone Facebook" title="Facebook">
+                        </a>
+                        <a class="link" href="https://www.linkedin.com/in/gustavocaspirro/" target="_blank">
+                            <img class="about-me__social-icons__icon" src="./img/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
+                        </a>
+                        <a class="link" href="https://github.com/gustavocaspirro" target="_blank">
+                            <img class="about-me__social-icons__icon github" src="./img/github.svg" alt="Icone GitHub" title="GitHub">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="about-me__description">
@@ -73,7 +67,6 @@
                     <a class="btn btn-cv" href="./pdf/Curriculo-Gustavo-de-Paula-Caspirro.pdf" target="_blank" >Download CV</a>
                 </div>  
             </div>
-
         </div>
     </main>
 
@@ -146,7 +139,6 @@
 
     <section class="skills" id="skills">
         <div class="wrapper">
-
             <div class="skills__content">
                 <div class="information-text">
                     <h1 class="title-section">Habilidades</h1>
@@ -213,13 +205,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="contact" id="contact">
         <div class="wrapper">
-
             <div class="contact__content">
                 <h1 class="title-section">Contato</h1>
 
@@ -232,21 +222,16 @@
                         <input class="input assunto" id="assunto" type="text" name="assunto" required>
             
                         <label class="label" for="email">E-mail</label>
-                        <input class="input email" id="email" type="text" name="email" required>
+                        <input class="input email" id="email" type="email" name="email" required>
                     </div>
 
                     <div class="contact__form__right">
                         <label class="label" for="message">Mensagem</label>
                         <textarea class="textarea mensagem" id="message" name="message" rows="10" required></textarea>
-                        <button class="button-send" type="button" onclick="sendEmail()">Enviar</button>
+                        <button class="btn button-send" type="button" onclick="sendEmail()">Enviar</button>
                     </div>
-        
-                    
                 </form>
-        
-                <div class="loading">Enviando E-mail...</div>
             </div>
-
         </div>
     </section>
 
@@ -273,6 +258,8 @@
             </div>
         </div>
     </footer>
+
+    <div class="loading">Enviando E-mail...</div>
 
     <script src="./js/tabs.js"></script>
     <script src="./js/sendEmail.js"></script>
