@@ -7,14 +7,14 @@ function sendEmail() {
     loading.className = loading.className + ' show';
 
     const name = document.querySelector('.name').value;
-    const assunto = document.querySelector('.assunto').value;
+    const subject = document.querySelector('.subject').value;
     const email = document.querySelector('.email').value;
-    const message = document.querySelector('.mensagem').value;
+    const message = document.querySelector('.message').value;
 
     const msg = {
         from: "gustavocaspirro@assessoria.app",
         to: "caspirrogustavo@gmail.com",
-        subject: assunto,
+        subject: subject,
         text: `
             Nome de quem entrou em contato: ${name}
             Email de quem entrou em contato: ${email}
